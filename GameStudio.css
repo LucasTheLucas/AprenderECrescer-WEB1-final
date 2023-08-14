@@ -54,7 +54,7 @@ header{
     font-size: 100px;
     text-decoration: underline;
 }
-.about{
+.About{
     background-color: #171e2b;
     display: flex;
     align-items: center;
@@ -194,7 +194,6 @@ p{
 }
 @media screen and (max-width: 850px) {
     .about-fix{
-        background-color: #171e2b;
         display: inline;
         align-items: center;
     }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Parasol Games</title>
+    <link rel="stylesheet" href="GameStudio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/triple-a-fazbear/images/7/76/SilverParasolGames.png/revision/latest/scale-to-width-down/300?cb=20200707100341">
+
+</head>
+<body>
+    <header class="space">
+        <nav class="fullnav">
+            <div class="painel" id="painel">
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About Us</li></a>
+                    <a href=""><li>News</li></a>
+                    <a href=""><li>Games</li></a>
+                    <a href=""><li>Contact Us</li></a>
+            </div>
+            <button class="hamburger-game" id="hamburger-game">
+                <span class="hamburger-game-line"></span>
+                <span class="hamburger-game-line"></span>
+                <span class="hamburger-game-line"></span>
+            </button>
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>News</li></a>
+                <a href=""><li>Games</li></a>
+                <a href=""><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <div class="principal">
+            <div class="principal-fix">
+                <p>Silver Parasol</p>
+                <h1>Games</h1>
+            </div>
+        </div>
+
+        <section class="About">
+            <div class="about-fix">
+                <img src="Oculus-Quest-2-Selling-removebg-preview.png" alt="">
+                <div>
+                    <h1>Our Mission</h1>
+                    <p>As Game Developers and a VR Enterprise Developers, we create what excites us! Because we believe Virtual Reality is on the edge of becoming a full-blown new entertainment medium - not  a passing fad, our goal is to advance the state of VR with our skill.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="Games">
+                <div class="Games-Ajustes">
+                    <h1>Our Games</h1>
+                        <div>
+                            <div class="jogos">
+                                <a href="https://youtu.be/fgBVrMogik0"><img src="FNAFDLC_GameIcon2.png" alt="" class="bom"></a>
+                                <a href="https://youtu.be/lLv3wTRJwWM"><img src="FNAF_GameIcon2.png" alt="" class="bom"></a>
+                                <a href="https://www.youtube.com/watch?v=bfxQikzUZmU&t=3s"><img src="rpo_GameIcon.png" alt="" class="bom"></a>
+                                <a href="https://www.youtube.com/watch?v=RSVdRhiGPdQ&t=5s"><img src="BOUNCE_GameIcon.png" alt="" class="bom"></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="final">
+            <div>
+                <H1>Join Us!</H1>
+                <p>Join us to receive a variety of emails containing discounts, promotions, news and much more. <br> <br>
+                <strong>(We are experiencing problems with our email servers and please do ignore any email not intended for you.)</strong></p>
+            </div>
+            <div>
+                <form>
+                    <fieldset>
+                        <div>
+                            <h1 for="Email">Email:</h1>
+                        <input type="email"
+                               id="Email"
+                               required>
+                        </div>
+                        <div>
+                            <h1>Password:</h1>
+                        <input type="password"
+                               id="Senha"
+                               required>
+                        </div>
+                        <div>
+                            <h1>Say something to Us!</h1>
+                        <input class="msg"
+                               type="text"
+                               id="text"
+                               required>
+                        </div>
+                        <div class="bonn">
+                               <button type="submit" class="bnt">Send</button>
+                            </div>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </footer>
+
+
+    </main>
+</body>
+</html>
+
+<script>
+    const hamburgerGame = document.getElementById("hamburger-game")
+    const painel = document.getElementById("painel")
+
+    hamburgerGame.addEventListener("click", function() {
+      const painelIsActive = painel.classList.contains("painel-ativo")
+      
+      if (painelIsActive) {
+        painel.classList.remove("painel-ativo")
+      } else {
+        painel.classList.add("painel-ativo")
+      }
+    })
+
+</script>

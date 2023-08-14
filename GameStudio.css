@@ -107,6 +107,8 @@ header{
 }
 .final{
     
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #171e2b;
     justify-content: center;
     align-items: center;
@@ -192,7 +194,7 @@ p{
     background-color: #fff;
     border-radius: 8px;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
     .about-fix{
         display: inline;
         align-items: center;
@@ -221,6 +223,8 @@ p{
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
     }
   }
   .painel{
@@ -233,7 +237,7 @@ p{
     border-radius: 10px;
     flex-direction: column;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.7s;
     transform: translate(0,-100%);
   }
 .painel a{
